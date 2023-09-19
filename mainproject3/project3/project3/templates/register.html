@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <style>
+        .class2{background-color:white; width:300px; text-align:center;border:1px solid black;}
+
+        #sub{background-color:red;color:yellow; border:1px solid white;}
+</style>
+</head >
+<body style="background-color:lightpink;"><center><br><br>
+        <div class="class2">
+          <h2 style="color:red;"> REGISTER </h2>
+
+          <form action="register" method="post">
+            {% csrf_token %}
+              <P style="color:black;">create new account</P>
+            <input type="text" name="username" placeholder="Enter your username "><br>
+           <input type="text" name="first_name" placeholder="Enter your first name "><br>
+           <input type="text" name="last_name" placeholder="Enter your last name "><br>
+           <input type="email" name="email" placeholder="Enter your email address"><br>
+           <input type="password" name="password" placeholder="Enter your password"><br>
+           <input type="password" name="password1" placeholder="confirm your password"><br><br>
+              <input type="submit" id="sub"><br><br>
+          </form>
+       </div>
+</center>
+</body>
+</html>
+
+
